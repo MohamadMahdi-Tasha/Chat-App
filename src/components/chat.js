@@ -6,7 +6,7 @@ function Chat(props) {
             <div className={props.profilePicClassName} style={{backgroundColor: props.profileColor}}></div>
             <div>
                 <h2>{props.name}</h2>
-                <h3 className={'c-light-black'}>Last Seen : {props.lastSeen}</h3>
+                {(props.lastSeen === 'Online') ? <h3 className={'c-blue'}>{props.lastSeen}</h3> : <h3 className={'c-light-black'}>Last Seen {props.lastSeen}</h3>}
             </div>
         </div>
     );
