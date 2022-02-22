@@ -42,9 +42,7 @@ export function sendNewMessage() {
 function Texts() {
     return (
         <div className={'Texts ml-2 w-50 h-100 ov-scroll scroll-none'}>
-            <Modal id={'modal2'}>
-                <h2>asdasdasdasd</h2>
-            </Modal>
+            <Modal id={'modal2'}><h5 className={'c-light-black w-100 d-flex jc-center ai-center'}>There Is Nothing To Show</h5></Modal>
              <div className={'d-inline-flex w-100 jc-sb ai-center'}>
                 <Chat className={'d-inline-flex'} name={'Dwayne'} profilePicClassName={'h-4rem w-4rem bg-img-no-repeat bg-img-size-cover mr-1 circle'} profileColor={'yellow'} lastSeen={'5 Minute Ago'} />
                 <button onClick={() => {showModal('modal2')}} className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
