@@ -15,7 +15,7 @@ function importData() {
 // A Function That Holds New Massage Components Element
 function NewMessage() {
     return (
-            <div className={'NewMessage mb-1 d-inline-flex top-0 bg-white border-light-black p-dot5 rounded w-100'}>
+            <div className={'NewMessage d-inline-flex top-0 bg-white border-light-black p-dot5 rounded w-100'}>
                 <div className={'d-inline-flex w-100'}>
                     <button onClick={importData} className={'mr-1 w-3rem h-3rem circle border-none bg-light hover-bg-light-black'}><i className="bi bi-plus fs-1dot5"></i></button>
                     <input id={'input-new-massage'} onKeyDown={(key) => { if (key.key === 'Enter') {sendNewMessage()} }} className={'bg-none outline-none border-none'} placeholder={'Type A Message To Send'} type="text"/>
