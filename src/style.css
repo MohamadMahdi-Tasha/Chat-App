@@ -105,7 +105,7 @@ input, button {outline: none;}
 .fs-1dot5 {font-size: 1.5rem;}
 .p-dot5 {padding: .5rem;}
 .mb-dot5 {margin-bottom: .5rem;}
-.show-on-click {opacity: 0;top: 0;left: 0;width: 0;height: 0;}
+.show-on-click {opacity: 0;pointer-events: none;}
 .fw-normal {font-weight: normal;}
 .c-blue {color: var(--blue);}
 .border-light-black-doted {border: 1px dotted rgba(0,0,0,.1);}

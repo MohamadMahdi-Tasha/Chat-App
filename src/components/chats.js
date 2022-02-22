@@ -10,13 +10,12 @@ function showModal(modalId) {document.getElementById(modalId).classList.remove('
 function Chats() {
     return (
         <div className={'chats shadow rounded p-1 w-50 h-100 ov-scroll scroll-none bg-white'}>
-            <button onClick={() => {showModal('modal1')}}>Click MEs</button>
             <Modal id={'modal1'}>
                 <h2 className={'w-100 d-flex jc-center ai-center c-blue'}>Modal</h2>
             </Modal>
             <div className={'d-inline-flex w-100 jc-sb ai-center mt-1 mb-1'}>
                 <h2 className={'c-light-black'}>Chats</h2>
-                <button className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
+                <button onClick={() => {showModal('modal1')}} className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
             </div>
             <form action="#">
                 <div className={'bg-light rounded d-inline-flex w-100 p-1 mb-1'}>
