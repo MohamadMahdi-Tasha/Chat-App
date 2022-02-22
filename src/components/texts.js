@@ -3,6 +3,10 @@
 import Chat from './chat';
 import Massage from './massage';
 import NewMessage from "./new-message";
+import Modal from './Modal';
+
+// A Function That Closes Modal
+function showModal(modalId) {document.getElementById(modalId).classList.remove('show-on-click');}
 
 // A Function That Sends New Massage
 export function sendNewMessage() {
@@ -38,9 +42,12 @@ export function sendNewMessage() {
 function Texts() {
     return (
         <div className={'Texts ml-2 w-50 h-100 ov-scroll scroll-none'}>
+            <Modal id={'modal2'}>
+                <h2>asdasdasdasd</h2>
+            </Modal>
              <div className={'d-inline-flex w-100 jc-sb ai-center'}>
                 <Chat className={'d-inline-flex'} name={'Dwayne'} profilePicClassName={'h-4rem w-4rem bg-img-no-repeat bg-img-size-cover mr-1 circle'} profileColor={'yellow'} lastSeen={'5 Minute Ago'} />
-                <button className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
+                <button onClick={() => {showModal('modal2')}} className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
             </div>
             <ul id={'massages_list'} className={'list-unstyled mt-1'}>
                 <li><Massage fromYou massage={'Lurem Ipsue Dolor Sit Amet.Lurem Ipsue Dolor Sit Amet.'}  profileBackgroundColor={'#006cff'}/></li>
