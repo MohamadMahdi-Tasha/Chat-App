@@ -46,7 +46,8 @@ function Texts() {
             <Modal id={'modal3'}><h5 className={'c-light-black w-100 d-flex jc-center ai-center'}>Please Fill The Input To Send Message.</h5></Modal>
             <Modal id={'modal2'}><h5 className={'c-light-black w-100 d-flex jc-center ai-center'}>There Is Nothing To Show</h5></Modal>
              <div className={'d-inline-flex w-100 jc-sb ai-center'}>
-                <button onClick={() => {showModal('modal2')}} className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
+                 <Chat noClickOfRightSide profilePicClassName={'w-3rem h-3rem bg-img-no-repeat bg-img-size-cover mr-1 circle'} className={'chat-component bg-none border-none d-inline-flex ai-center mb-1 p-1 w-80'} name={'Dwayne'} profileColor={'yellow'} lastSeen={'5 Minute Ago'}/>
+                 <button onClick={() => {showModal('modal2')}} className={'w-3rem h-3rem bg-none border-none circle transition hover-bg-light-black'}><i className="bi bi-three-dots"></i></button>
             </div>
             <ul id={'massages_list'} className={'list-unstyled mt-1'}>
                 <li><Massage fromYou massage={'Lurem Ipsue Dolor Sit Amet.Lurem Ipsue Dolor Sit Amet.'}  profileBackgroundColor={'#006cff'}/></li>
