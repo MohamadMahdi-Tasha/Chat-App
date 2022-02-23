@@ -132,3 +132,18 @@ input, button {outline: none;}
 .w-35 {width: 35%;}
 
 /*Media Query*/
+@media (max-width: 1025px) {
+    .LeftSide {display: none;}
+    .right-side {
+        width: 50%;
+        margin-left: 0;
+    }
+    .chats {
+        display: none;
+        width: 50%;
+    }
+    .Texts {
+        width: 100% !important;
+        margin: 0;
+    }
+}
