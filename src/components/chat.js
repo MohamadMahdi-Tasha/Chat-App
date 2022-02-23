@@ -2,7 +2,9 @@
 // A Function That Holds Chat Component Elements And It Props
 function Chat(props) {
     return (
-        <div className={props.className}>
+        <div className={props.className} onClick={() => {
+            alert('Clicked')
+        }}>
             <div className={props.profilePicClassName} style={{backgroundColor: props.profileColor}}></div>
             <div>
                 <h2>{props.name}</h2>
