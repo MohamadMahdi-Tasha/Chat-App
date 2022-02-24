@@ -133,17 +133,20 @@ input, button {outline: none;}
 
 /*Media Query*/
 @media (max-width: 1025px) {
+    .App {width: 100%;}
     .LeftSide {display: none;}
-    .right-side {
-        width: 50%;
-        margin-left: 0;
-    }
-    .chats {
-        display: none;
-        width: 50%;
-    }
-    .Texts {
-        width: 100% !important;
+    .right-side {width: 50%;}
+    .MiddleSide {width: 50%;}
+    .chats {display: none;}
+    .Texts {width: 100%;}
+}
+
+@media (max-width: 720px) {
+    .right-side {display: none;}
+    .MiddleSide {
+        width: 100%;
         margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
     }
 }
